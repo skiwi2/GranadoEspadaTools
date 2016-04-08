@@ -3,17 +3,17 @@ package com.skiwi.granadoespadatools.model.objects;
 /**
  * @author Frank van Heeswijk
  */
-public class Buff {
-    private final BuffType buffType;
+public class Effect {
+    private final EffectType effectType;
     private final int amount;
 
-    public Buff(BuffType buffType, int amount) {
-        this.buffType = buffType;
+    public Effect(EffectType effectType, int amount) {
+        this.effectType = effectType;
         this.amount = amount;
     }
 
-    public BuffType getBuffType() {
-        return buffType;
+    public EffectType getEffectType() {
+        return effectType;
     }
 
     public int getAmount() {

@@ -1,8 +1,8 @@
 package com.skiwi.granadoespadatools.model.data;
 
 import com.skiwi.granadoespadatools.model.interfaces.StanceData;
-import com.skiwi.granadoespadatools.model.objects.Buff;
-import com.skiwi.granadoespadatools.model.objects.BuffType;
+import com.skiwi.granadoespadatools.model.objects.Effect;
+import com.skiwi.granadoespadatools.model.objects.EffectType;
 
 import java.util.Arrays;
 import java.util.List;
@@ -48,13 +48,13 @@ public enum BasicStance implements StanceData {
         }
 
         @Override
-        public List<Buff> getLevel25Bonuses() {
+        public List<Effect> getLevel25Bonuses() {
             return Arrays.asList(
-                new Buff(BuffType.SP_REGENERATION, 25),
-                new Buff(BuffType.ACCURACY, 35),
-                new Buff(BuffType.ATK_SPD_PERCENTAGE, 15),
-                new Buff(BuffType.CRITICAL, 7),
-                new Buff(BuffType.DEF_PENETRATION_RATE, 25)
+                new Effect(EffectType.SP_REGENERATION, 25),
+                new Effect(EffectType.ACCURACY, 35),
+                new Effect(EffectType.ATK_SPD_PERCENTAGE, 15),
+                new Effect(EffectType.CRITICAL, 7),
+                new Effect(EffectType.DEF_PENETRATION_RATE, 25)
             );
         }
     };

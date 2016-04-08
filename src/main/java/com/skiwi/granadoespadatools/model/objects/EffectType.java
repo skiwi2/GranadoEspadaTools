@@ -3,7 +3,7 @@ package com.skiwi.granadoespadatools.model.objects;
 /**
  * @author Frank van Heeswijk
  */
-public enum BuffType {
+public enum EffectType {
     SP_REGENERATION,
     ACCURACY,
     ATK_SPD_PERCENTAGE,

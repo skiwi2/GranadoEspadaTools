@@ -1,8 +1,7 @@
 package com.skiwi.granadoespadatools.model.interfaces;
 
-import com.skiwi.granadoespadatools.model.objects.Buff;
+import com.skiwi.granadoespadatools.model.objects.Effect;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -23,5 +22,5 @@ public interface StanceData {
 
     int getBLK();
 
-    List<Buff> getLevel25Bonuses();
+    List<Effect> getLevel25Bonuses();
 }
