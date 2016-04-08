@@ -1,6 +1,9 @@
 package com.skiwi.granadoespadatools.model.interfaces;
 
+import com.skiwi.granadoespadatools.model.objects.Buff;
+
 import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * @author Frank van Heeswijk
@@ -20,5 +23,5 @@ public interface StanceData {
 
     int getBLK();
 
-    //TODO add level 25 bonuses
+    List<Buff> getLevel25Bonuses();
 }
