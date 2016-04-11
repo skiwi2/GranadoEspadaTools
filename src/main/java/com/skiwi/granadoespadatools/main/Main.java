@@ -1,5 +1,6 @@
 package com.skiwi.granadoespadatools.main;
 
+import com.skiwi.granadoespadatools.model.data.BasicBuff;
 import com.skiwi.granadoespadatools.model.data.BasicCharacter;
 import com.skiwi.granadoespadatools.model.data.BasicWeapon;
 import com.skiwi.granadoespadatools.model.objects.Character;
@@ -29,6 +30,15 @@ public class Main {
             new Effect(EffectType.AR, 2),
             new Effect(EffectType.DEMONS_PERCENTAGE, 55)
         ), Arrays.asList(Rumin.MAJOR_OBSIDIAN));
+
+        calyce.addBuff(BasicBuff.SKILL_EVASION_LV1);
+        calyce.addBuff(BasicBuff.ATK_LV1);
+        calyce.addBuff(BasicBuff.INT_LV1);
+        calyce.addBuff(BasicBuff.CHARACTER_BUFF_LV1);
+        calyce.addBuff(BasicBuff.TIERRA_DE_LA_SED_LV2);
+        calyce.addBuff(BasicBuff.FAMILY_ATTRIBUTE_SKIWI);
+        calyce.addBuff(BasicBuff.BLESSING_OF_FACTION_LV13);
+        calyce.addBuff(BasicBuff.CHILIARCH_LV5);
 
         calyce.setRightHandWeapon(rightHandCrossbow);
     }

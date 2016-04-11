@@ -1,5 +1,6 @@
 package com.skiwi.granadoespadatools.model.objects;
 
+import com.skiwi.granadoespadatools.model.interfaces.BuffData;
 import com.skiwi.granadoespadatools.model.interfaces.CharacterData;
 
 import java.math.BigDecimal;
@@ -16,6 +17,8 @@ public class Character {
     private final boolean hasLaAttencion;
     private final List<StatBonus> promotionStats = new ArrayList<>();
 
+    private final List<BuffData> buffs = new ArrayList<>();
+
     private Weapon rightHandWeapon;
     private Weapon leftHandWeapon;
 
@@ -25,6 +28,10 @@ public class Character {
         this.levelPercentage = levelPercentage;
         this.hasLaAttencion = hasLaAttencion;
         this.promotionStats.addAll(promotionStats);
+    }
+
+    public void addBuff(BuffData buff) {
+        this.buffs.add(buff);
     }
 
     public void setRightHandWeapon(Weapon rightHandWeapon) {
