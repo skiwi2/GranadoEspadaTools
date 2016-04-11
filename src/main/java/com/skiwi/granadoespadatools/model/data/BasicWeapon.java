@@ -3,6 +3,7 @@ package com.skiwi.granadoespadatools.model.data;
 import com.skiwi.granadoespadatools.model.interfaces.WeaponData;
 import com.skiwi.granadoespadatools.model.objects.Effect;
 import com.skiwi.granadoespadatools.model.objects.EffectType;
+import com.skiwi.granadoespadatools.model.objects.WeaponClass;
 import com.skiwi.granadoespadatools.model.objects.WeaponSeries;
 import com.skiwi.granadoespadatools.model.objects.WeaponType;
 
@@ -14,6 +15,11 @@ import java.util.List;
  */
 public enum  BasicWeapon implements WeaponData {
     ACCURACY_OF_PEGASUS {
+        @Override
+        public WeaponClass getWeaponClass() {
+            return WeaponClass.CROSSBOW;
+        }
+
         @Override
         public WeaponType getWeaponType() {
             return WeaponType.RANGED;
