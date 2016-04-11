@@ -16,11 +16,22 @@ public class Character {
     private final boolean hasLaAttencion;
     private final List<StatBonus> promotionStats = new ArrayList<>();
 
+    private Weapon rightHandWeapon;
+    private Weapon leftHandWeapon;
+
     public Character(CharacterData characterData, int level, BigDecimal levelPercentage, boolean hasLaAttencion, List<StatBonus> promotionStats) {
         this.characterData = characterData;
         this.level = level;
         this.levelPercentage = levelPercentage;
         this.hasLaAttencion = hasLaAttencion;
         this.promotionStats.addAll(promotionStats);
+    }
+
+    public void setRightHandWeapon(Weapon rightHandWeapon) {
+        this.rightHandWeapon = rightHandWeapon;
+    }
+
+    public void setLeftHandWeapon(Weapon leftHandWeapon) {
+        this.leftHandWeapon = leftHandWeapon;
     }
 }
