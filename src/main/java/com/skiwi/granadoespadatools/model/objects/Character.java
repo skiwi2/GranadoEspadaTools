@@ -41,4 +41,13 @@ public class Character {
     public void setLeftHandWeapon(Weapon leftHandWeapon) {
         this.leftHandWeapon = leftHandWeapon;
     }
+
+    public CombatStats calculateCombatStats() {
+        //TODO only calculate offensive attributes for now
+        CombatStatsBuilder builder = new CombatStatsBuilder();
+
+        //TODO calculate offensive attributes
+
+        return builder.createCombatStats();
+    }
 }
