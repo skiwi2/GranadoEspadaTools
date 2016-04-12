@@ -82,5 +82,19 @@ public enum BasicBuff implements BuffData {
                 new Effect(EffectType.MAX_HP, 1500)
             );
         }
+    },
+    STEROID {
+        @Override
+        public List<Effect> getEffects() {
+            return Arrays.asList(
+                new Effect(EffectType.ATK_PERCENTAGE, 15),
+                new Effect(EffectType.ATK_SPD_PERCENTAGE, 15),
+                new Effect(EffectType.MOVE_SPD_PERCENTAGE, 15),
+                new Effect(EffectType.MAX_HP_PERCENTAGE, 15),
+                new Effect(EffectType.DEF, 15),
+                new Effect(EffectType.RES, 15),
+                new Effect(EffectType.ACCURACY, 15)
+            );
+        }
     };
 }

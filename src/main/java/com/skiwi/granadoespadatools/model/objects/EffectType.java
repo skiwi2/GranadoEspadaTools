@@ -27,5 +27,6 @@ public enum EffectType {
     IF_ENEMY_BELOW_50_DAMAGE_INCREASE_PERCENTAGE,
     DEF,
     RES,
-    MAX_HP;
+    MAX_HP,
+    MOVE_SPD_PERCENTAGE;
 }

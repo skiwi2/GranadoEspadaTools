@@ -39,6 +39,7 @@ public class Main {
         calyce.addBuff(BasicBuff.FAMILY_ATTRIBUTE_SKIWI);
         calyce.addBuff(BasicBuff.BLESSING_OF_FACTION_LV13);
         calyce.addBuff(BasicBuff.CHILIARCH_LV5);
+        calyce.addBuff(BasicBuff.STEROID);
 
         calyce.setRightHandWeapon(rightHandCrossbow);
     }
